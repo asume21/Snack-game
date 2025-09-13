@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake IO - Earn While Playing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <div class="score-board">
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="coins">Coins: <span id="coins">0</span></div>
+                <div class="players">Players Online: <span id="players-online">1</span></div>
+            </div>
+            <button id="watch-ad-btn" class="ad-button">Watch Ad (+10 coins)</button>
+        </header>
+
+        <div class="game-area">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+            
+            <div id="game-over-screen" class="overlay hidden">
+                <div class="overlay-content">
+                    <h2>Game Over!</h2>
+                    <p>Final Score: <span id="final-score">0</span></p>
+                    <p>Coins Earned: <span id="coins-earned">0</span></p>
+                    <button id="watch-ad-revive" class="ad-button">Watch Ad to Continue (+5 coins)</button>
+                    <button id="restart-btn" class="restart-button">Start New Game</button>
+                </div>
+            </div>
+
+            <div id="ad-modal" class="overlay hidden">
+                <div class="overlay-content">
+                    <h3>Advertisement</h3>
+                    <div class="ad-content">
+                        <div class="ad-placeholder">
+                            <p>🎮 Play Amazing Games!</p>
+                            <p>Download our partner games and earn more coins!</p>
+                        </div>
+                        <div class="ad-timer">
+                            <p>Ad ends in: <span id="ad-timer">5</span> seconds</p>
+                        </div>
+                    </div>
+                    <button id="close-ad-btn" class="close-button" disabled>Close Ad</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <p>Use WASD or Arrow Keys to move</p>
+            <p>Watch ads to earn coins and continue playing!</p>
+        </div>
+    </div>
+
+    <script src="ads.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

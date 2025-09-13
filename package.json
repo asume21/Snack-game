@@ -1,0 +1,28 @@
+{
+  "name": "snake-io-monetized",
+  "version": "1.0.0",
+  "description": "A Snake IO game with monetization through ads, allowing users to earn coins by watching advertisements",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "snake",
+    "io-game",
+    "html5-game",
+    "monetization",
+    "ads",
+    "javascript",
+    "canvas"
+  ],
+  "author": "Snake IO Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asume21/Snack-game.git"
+  },
+  "engines": {
+    "python": ">=3.6"
+  }
+}
